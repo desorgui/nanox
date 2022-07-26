@@ -1,9 +1,9 @@
-import Rockets from './Components/Rockets';
-import Missions from './Components/Missions';
-import Profile from './Components/Profile';
-import ErrorPage from './Components/ErrorPage';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import Profile from './components/Profile';
+import ErrorPage from './components/ErrorPage';
 import './App.css';
-import Navbar from './Components/Navbar';
+import Navbar from './components/Navbar';
 import {
   BrowserRouter as Router,
   Routes,

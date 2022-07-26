@@ -23,6 +23,7 @@ const Navbar = () => {
       link: "/profile"
     }
   ];
+
   return (
     <div className={styles.navbar}>
       <div className={styles.logotitle}>
@@ -34,7 +35,7 @@ const Navbar = () => {
       <ul className={styles.menu}>
         {navItem.map((item) => (
           <li key={item.id}>
-            <NavLink className={styles.navitem}
+            <NavLink className={`${styles.navitem}`}
               to={item.link}
             >
               {item.title}
