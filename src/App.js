@@ -17,6 +17,7 @@ function App() {
         <header>
           <Navbar />
         </header>
+        <hr />
         <Routes>
           <Route path="/" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />

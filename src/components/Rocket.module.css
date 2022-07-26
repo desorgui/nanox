@@ -1,0 +1,21 @@
+.rocket {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 64px;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: larger;
+  margin-top: 16px;
+}
+
+button {
+  margin-top: 32px;
+  font-size: larger;
+  padding: 16px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4%;
+}
