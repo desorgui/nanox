@@ -10,12 +10,32 @@ p {
   margin-top: 16px;
 }
 
-button {
+.reserve {
   margin-top: 32px;
   font-size: larger;
   padding: 16px 12px;
   border: none;
   background-color: #007bff;
   color: white;
-  border-radius: 4%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel {
+  margin-top: 32px;
+  font-size: larger;
+  padding: 16px 12px;
+  background-color: white;
+  border-color: #9ca2a7;
+  color: #6d757d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+mark {
+  background-color: #18a2b8;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0 8px;
 }

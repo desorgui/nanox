@@ -1,18 +1,12 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import Rocket from './Rocket';
-import { getRockets } from '../redux/rockets/rockets';
 
 import styles from './Rockets.module.css';
 
 const Rockets = () => {
   const rocketlist = useSelector(state => state.rockets);
-
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
 
   return (
     <div className={styles.books}>
