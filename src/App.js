@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getMissions } from './redux/missions/missions';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import Profile from './components/Profile';
@@ -11,6 +14,10 @@ import {
 } from 'react-router-dom';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMissions());
+  },[]);
   return (
     <Router>
       <main>
