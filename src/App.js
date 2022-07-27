@@ -1,5 +1,12 @@
-import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getMissions } from './redux/missions/missions';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import Profile from './components/Profile';
+import ErrorPage from './components/ErrorPage';
+import './App.css';
+import Navbar from './components/Navbar';
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,8 +26,8 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getRockets());
+    dispatch(getMissions());
   }, [dispatch]);
-
   return (
     <Router>
       <main>

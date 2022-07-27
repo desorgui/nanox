@@ -9,6 +9,10 @@ hr {
   margin: 16px 48px;
 }
 
+body {
+  padding: 0 10%;
+}
+
 .App-logo {
   height: 8vmin;
   pointer-events: none;
@@ -30,4 +34,43 @@ hr {
 
 .active {
   color: rgb(255, 0, 76);
+}
+
+.userBadge {
+  min-width: 180px;
+}
+
+.joinButton {
+  min-width: 150px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+
+.missions_container {
+  margin-bottom: 100px;
+}
+
+.userBadge label {
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 4px;
+  background-color: rgb(102, 100, 100);
+}
+
+.userBadge.member label {
+  background-color: rgb(2, 182, 214);  
+}
+
+.missionBtn {
+  padding: 3px 5px;
+  background-color: transparent;
+  border-color: #444;
+}
+
+.missionBtn.joined {
+  border-color: rgb(204, 63, 63);
 }
