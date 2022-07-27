@@ -1,24 +1,18 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { getMissions } from './redux/missions/missions';
-import Rockets from './components/Rockets';
-import Missions from './components/Missions';
-import Profile from './components/Profile';
-import ErrorPage from './components/ErrorPage';
-import './App.css';
-import Navbar from './components/Navbar';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
 
+import { getRockets } from './redux/rockets/rockets';
+import { getMissions } from './redux/missions/missions';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import Profile from './components/Profile';
 import ErrorPage from './components/ErrorPage';
 import Navbar from './components/Navbar';
-import { getRockets } from './redux/rockets/rockets';
 
 import './App.css';
 
