@@ -1,0 +1,41 @@
+.rocket {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 64px;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: larger;
+  margin-top: 16px;
+}
+
+.reserve {
+  margin-top: 32px;
+  font-size: larger;
+  padding: 16px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel {
+  margin-top: 32px;
+  font-size: larger;
+  padding: 16px 12px;
+  background-color: white;
+  border-color: #9ca2a7;
+  color: #6d757d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+mark {
+  background-color: #18a2b8;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0 8px;
+}
