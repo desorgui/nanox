@@ -20,7 +20,6 @@ function Rocket(props) {
 
   const cancel = (elem) => {
     dispatch(cancelRocket(elem.target.id));
-    // console.log(elem.target.id);
   }
 
   return (
