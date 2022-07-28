@@ -16,7 +16,7 @@ describe('Tests for the Header component', () => {
   test('check for the rockets link text', () => {
     expect(screen.findByText('Rockets')).toBeTruthy();
   });
-  test('check for the missions link text.', () => {
+  test('check for the missions link text', () => {
     expect(screen.findByText('Missions')).toBeTruthy();
   });
 
