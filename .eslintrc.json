@@ -23,7 +23,8 @@
       "error",
       "ignorePackages",
       {
-        "": "never"
+        "": "never",
+        "js": "never"
       }
    ]
   },
