@@ -33,7 +33,8 @@ body {
 }
 
 .active {
-  color: rgb(255, 0, 76);
+  text-decoration: underline;
+  color: #288dff;
 }
 
 .userBadge {
