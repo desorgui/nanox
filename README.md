@@ -47,11 +47,11 @@ To get a local copy up and running follw these simple example steps:
 
 ## Authors
 
-👤 **Desor Guishny**
+👤 **Guishny Desor**
 
-- GitHub:  [@githubhandle]()
-- Twitter: [Ogiogio Victor]()
-- LinkedIn:  [Ogiogio Victor]()
+- GitHub:  [@desorgui](https://github.com/desorgui)
+- Twitter: [@Dguishny](https://twitter.com/DGuishny)
+- LinkedIn:  [Guishny Desor](https://www.linkedin.com/in/desorguishny)
 
 👤 **Hans P. Zizold**
 
