@@ -4,24 +4,21 @@ import { useSelector } from 'react-redux';
 import styles from './Profile.module.css';
 
 const Profile = () => {
-  const rocketReserved = useSelector(state => state.rockets)
-    .filter(rocket => rocket.reserved === true);
-  const missionReserved = useSelector(state => state.missions)
-    .filter(mission => mission.reserved === true);
-  
+  const rocketReserved = useSelector((state) => state.rockets)
+    .filter((rocket) => rocket.reserved === true);
+  const missionReserved = useSelector((state) => state.missions)
+    .filter((mission) => mission.reserved === true);
+
   return (
     <div className={styles.profile}>
       <div className={styles.missions}>
         <h2>My Missions</h2>
         <ul className={styles.list}>
-          {missionReserved.map((elem) => {
-            const { mission_name, mission_id } = elem;
-            return (
-              <div key={mission_id} className={styles.element}>
-                <li>{mission_name}</li>
-              </div>
-            );
-          })}
+          {missionReserved.map((elem) => (
+            <div key={elem.mission_id} className={styles.element}>
+              <li>{elem.mission_name}</li>
+            </div>
+          ))}
         </ul>
       </div>
       <div className={styles.rockets}>
@@ -39,5 +36,5 @@ const Profile = () => {
       </div>
     </div>
   );
-}
+};
 export default Profile;

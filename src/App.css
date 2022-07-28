@@ -23,10 +23,12 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,7 +47,9 @@ body {
   min-width: 150px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 1rem;
@@ -63,7 +67,7 @@ table, th, td {
 }
 
 .userBadge.member label {
-  background-color: rgb(2, 182, 214);  
+  background-color: rgb(2, 182, 214);
 }
 
 .missionBtn {
@@ -74,4 +78,6 @@ table, th, td {
 
 .missionBtn.joined {
   border-color: rgb(204, 63, 63);
+  border-radius: 4px;
+  color: red;
 }

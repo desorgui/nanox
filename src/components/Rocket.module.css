@@ -4,6 +4,10 @@
   margin: 24px 64px;
 }
 
+.rocketname {
+  margin-top: 0;
+}
+
 p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-size: larger;

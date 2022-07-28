@@ -13,30 +13,26 @@ export const getRockets = createAsyncThunk(
     const response = await fetch(BASEURL);
     const initValues = await response.json();
     initValues.forEach((elem) => {
-      rocketList.push({ 
-        id: elem.id, 
-        name: elem.rocket_name, 
-        description: elem.description, 
+      rocketList.push({
+        id: elem.id,
+        name: elem.rocket_name,
+        description: elem.description,
         image: elem.flickr_images[0],
-        reserved: false 
+        reserved: false,
       });
-    })
+    });
     return (rocketList);
   },
 );
 
 export const reserveRocket = createAsyncThunk(
   RESERVEROCKET,
-  async (id) => {
-    return id;
-  }
+  async (id) => id,
 );
 
 export const cancelRocket = createAsyncThunk(
   CANCELROCKET,
-  async (id) => {
-    return id;
-  }
+  async (id) => id,
 );
 
 const rocketSlice = createSlice({
@@ -44,14 +40,12 @@ const rocketSlice = createSlice({
   initialState: [],
   extraReducers: {
     [getRockets.fulfilled]: (state, action) => action.payload,
-    [reserveRocket.fulfilled]: (state, action) => state.map(rocket => {
-      if (rocket.id !== Number(action.payload))
-        return rocket;
+    [reserveRocket.fulfilled]: (state, action) => state.map((rocket) => {
+      if (rocket.id !== Number(action.payload)) { return rocket; }
       return { ...rocket, reserved: true };
     }),
-    [cancelRocket.fulfilled]: (state, action) => state.map(rocket => {
-      if (rocket.id !== Number(action.payload))
-        return rocket;
+    [cancelRocket.fulfilled]: (state, action) => state.map((rocket) => {
+      if (rocket.id !== Number(action.payload)) { return rocket; }
       return { ...rocket, reserved: false };
     }),
   },

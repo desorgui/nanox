@@ -3,17 +3,15 @@ import { useSelector } from 'react-redux';
 
 import Rocket from './Rocket';
 
-import styles from './Rockets.module.css';
-
 const Rockets = () => {
-  const rocketlist = useSelector(state => state.rockets);
+  const rocketlist = useSelector((state) => state.rockets);
 
   return (
-    <div className={styles.books}>
-      <div className={styles.booklist}>
+    <div>
+      <div>
         {rocketlist.map((elem) => {
           const {
-            id, name, description, image, reserved
+            id, name, description, image, reserved,
           } = elem;
           return (
             <Rocket
@@ -29,5 +27,5 @@ const Rockets = () => {
       </div>
     </div>
   );
-}
+};
 export default Rockets;
