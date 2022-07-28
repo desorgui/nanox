@@ -5,6 +5,7 @@ import { joinMission } from '../redux/missions/missions';
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
+  const role = 'join'
   return (
     <div className="missions_container">
       <table>
@@ -22,7 +23,7 @@ const Missions = () => {
             <td className={`userBadge ${mission.reserved ? 'member' : ' '}`}><label>
               {mission.reserved ? 'Active member' : 'NOT A MEMBER'}</label></td>
             <td className="joinButton">
-              <button onClick={() => dispatch(joinMission(mission.mission_id))} className={`missionBtn ${mission.reserved ? 'joined' : ' '}`}>
+              <button role={role} onClick={() => dispatch(joinMission(mission.mission_id))} className={`missionBtn ${mission.reserved ? 'joined' : ' '}`}>
               {mission.reserved ? 'Leave Mission' : 'Join Mission'}
               </button>
             </td>
