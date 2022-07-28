@@ -11,7 +11,7 @@ describe('Tests for the Header component', () => {
     </Router>,
   );
   test('Checks for the logo text', () => {
-    expect(screen.getByText('Space Travelers\' Hub')).toBeTruthy();
+    expect(screen.getByText('Space Travelers Hub')).toBeTruthy();
   });
   test('check for the rockets link text', () => {
     expect(screen.findByText('Rockets')).toBeTruthy();

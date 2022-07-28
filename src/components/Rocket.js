@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-
 import PropTypes from 'prop-types';
 
 import { reserveRocket, cancelRocket } from '../redux/rockets/rockets';
@@ -25,7 +24,7 @@ function Rocket(props) {
     <div className={styles.rocket}>
       <img src={image} alt={name} height="250" width="300" />
       <div>
-        <h2>{name}</h2>
+        <h2 className={styles.rocketname}>{name}</h2>
         <p>
           {reserved && <mark>Reserved</mark>}
           {' '}
