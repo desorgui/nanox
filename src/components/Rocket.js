@@ -12,7 +12,6 @@ function Rocket(props) {
   const {
     id, name, description, image, reserved,
   } = props;
-  console.log(reserved);
 
   const reservation = (elem) => {
     dispatch(reserveRocket(elem.target.id));
