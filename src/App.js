@@ -8,10 +8,10 @@ import {
 
 import { getRockets } from './redux/rockets/rockets';
 import { getMissions } from './redux/missions/missions';
-import Rockets from './components/Rockets';
-import Missions from './components/Missions';
-import Profile from './components/Profile';
-import ErrorPage from './components/ErrorPage';
+import Rockets from './components/Rockets.js';
+import Missions from './components/Missions.js';
+import Profile from './components/Profile.js';
+import ErrorPage from './components/ErrorPage.js';
 import Navbar from './components/Navbar';
 
 import './App.css';

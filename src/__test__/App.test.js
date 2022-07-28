@@ -8,7 +8,6 @@ import App from '../App';
 function renderWithProviders(
   ui,
   {
-    // Automatically create a store instance if no store was passed in
     storetest = store,
     ...renderOptions
   } = {},

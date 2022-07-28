@@ -5,9 +5,9 @@ import { MemoryRouter as Router } from 'react-router-dom';
 
 import store from '../redux/configureStore';
 import Rocket from './Rocket';
-import Missions from './Missions';
-import Rockets from './Rockets';
-import Profile from './Profile';
+import Missions from './Missions.js';
+import Rockets from './Rockets.js';
+import Profile from './Profile.js';
 import Navbar from './Navbar';
 
 const renderReservedRockets = (reserved) => {

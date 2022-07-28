@@ -2,14 +2,12 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import '@testing-library/jest-dom';
-
 import store from '../redux/configureStore';
-import Missions from '../components/Missions';
+import Missions from '../components/Missions.js';
 
 function renderWithProviders(
   ui,
   {
-    // Automatically create a store instance if no store was passed in
     storetest = store,
     ...renderOptions
   } = {},
