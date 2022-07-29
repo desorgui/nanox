@@ -5,9 +5,10 @@ import Rocket from './Rocket';
 
 const Rockets = () => {
   const rocketlist = useSelector((state) => state.rockets);
+  const role = "container";
 
   return (
-    <div>
+    <div role={role}>
       <div>
         {rocketlist.map((elem) => {
           const {
