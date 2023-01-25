@@ -2,11 +2,11 @@
 
 ### TITLE
 
-> ### SPACE TRAVELERS HUB
+> ### NANOX
 
 ## Description
 
-"Space Travelers Hub" is a web application where you can discover rockets and missions. You can reserve and join them.
+"nanox" is a web application where you can discover rockets and missions for space travelers. You can reserve and join them.
 
 ## Built With
 
@@ -20,7 +20,7 @@
 
 ## Live Demo (if available)
 
- [Live Version](https://space-travelers-hd.netlify.app/)
+ [Live Version](https://nanox.netlify.app/)
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ To get a local copy up and running follw these simple example steps:
 
 ```
     - Select the link with the code on the https code table in the repo
-    - Open a Terminal and write the command: git clone https://github.com/HansZizold/Space-Travelers-Hub
+    - Open a Terminal and write the command: git clone https://github.com/desorgui/nanox
     - $ cd into the directory and run npm install
     - $ After the node_module module is installed successfully, run npm start
     - $ The project will open on the browser
