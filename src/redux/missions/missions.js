@@ -11,6 +11,7 @@ export const getMissions = createAsyncThunk(
     const missionArr = [];
     await fetch(getUrl).then((missions) => missions.json())
       .then((res) => res.forEach((mission) => {
+        const {} = mission
         missionArr.push({
           mission_id: mission.mission_id,
           mission_name: mission.mission_name,
@@ -22,6 +23,7 @@ export const getMissions = createAsyncThunk(
   },
 );
 export const joinMission = (id) => ({ type: JOIN_OR_LEAVE_MISSION, payload: id });
+
 
 const missionSlice = createSlice({
   name: 'missions',

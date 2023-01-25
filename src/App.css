@@ -1,8 +1,13 @@
+@font-face {
+  font-family: ethnocentric;
+  src: url(./fonts/ethnocentric.otf);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: ethnocentric;
 }
 
 hr {
@@ -80,4 +85,42 @@ td {
   border-color: rgb(204, 63, 63);
   border-radius: 4px;
   color: red;
+}
+
+.splash-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/space-bg.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.splash-container h1 {
+  font-size: 4em;
+  color: #fff;
+}
+
+.splash-container h1 span{
+  background: -webkit-linear-gradient(rgb(255, 196, 0), rgb(255, 137, 3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.splash-container img {
+  height: 80vh;
+  position: absolute;
+  right: 3rem;
+  animation: bounce 10s linear infinite;
+}
+
+@keyframes bounce{
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(25px, -25px); }
+  50% { transform: translate(0, -50px); }
+  75%  { transform: translate(-25px, -25px); }
+  100% { transform: translate(0, 0); }
 }

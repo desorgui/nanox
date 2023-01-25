@@ -9,7 +9,7 @@ const Navbar = () => {
     {
       id: '1',
       title: 'Rockets',
-      link: '/',
+      link: '/rockets',
     },
     {
       id: '2',
@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavLink to={navItem[0].link}>
           <img src={planet} className="App-logo" alt="logo" />
         </NavLink>
-        <h2>Space Travelers Hub</h2>
+        <h2>nanoX</h2>
       </div>
       <ul className={styles.menu}>
         {navItem.map((item) => (
