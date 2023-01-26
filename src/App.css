@@ -8,14 +8,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: ethnocentric, sans-serif;
-}
-
-hr {
-  margin: 16px 48px;
+  outline: none;
 }
 
 body {
-  padding: 0 10%;
+  margin: 0;
+  color: #fff;
+  background: #444;
 }
 
 .App-logo {
@@ -23,7 +22,7 @@ body {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -37,7 +36,7 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .active {
   text-decoration: underline;
@@ -95,13 +94,10 @@ td {
   height: 100vh;
   background-image: url(./images/space-bg.jpg);
   background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .splash-container h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   color: #fff;
   margin-bottom: 3rem;
 }
@@ -116,6 +112,7 @@ td {
   height: 80vh;
   position: absolute;
   right: 3rem;
+  bottom: 1rem;
   animation: bounce 10s linear infinite;
 }
 

@@ -29,7 +29,6 @@ function App() {
         <header>
           <Navbar />
         </header>
-        <hr />
         <Routes>
           <Route path="/" element={<Splash />} />
           <Route path="/rockets" element={<Rockets />} />

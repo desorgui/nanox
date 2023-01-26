@@ -1,13 +1,28 @@
 .navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 16px 64px;
+  width: 100%;
+  padding: 1rem 10%;
 }
 
 .logotitle {
   display: flex;
   align-items: center;
+}
+
+.span {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
 img {
@@ -27,9 +42,11 @@ ul {
 
 li {
   margin: 0 16px;
-  font-size: larger;
+  padding: 0;
+  font-size: medium;
 }
 
 .navitem {
   text-decoration: none;
+  color: #fff;
 }

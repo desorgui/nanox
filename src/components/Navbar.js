@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import planet from '../images/planet.png';
+import planet from '../images/logo.png';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -25,24 +25,26 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <div className={styles.logotitle}>
-        <NavLink to={navItem[0].link}>
-          <img src={planet} className="App-logo" alt="logo" />
-        </NavLink>
-        <h2>nanoX</h2>
+      <div className={styles.container}>
+        <div className={styles.logotitle}>
+          <NavLink to="/" className={styles.logotitle}>
+            <img src={planet} className="App-logo" alt="logo" />
+            <span className={styles.span}>nanoX</span>
+          </NavLink>
+        </div>
+        <ul className={styles.menu}>
+          {navItem.map((item) => (
+            <li key={item.id}>
+              <NavLink
+                className={`${styles.navitem}`}
+                to={item.link}
+              >
+                {item.title}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className={styles.menu}>
-        {navItem.map((item) => (
-          <li key={item.id}>
-            <NavLink
-              className={`${styles.navitem}`}
-              to={item.link}
-            >
-              {item.title}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

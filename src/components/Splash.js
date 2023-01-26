@@ -7,13 +7,13 @@ const Splash = () => (
   <div className="splash-container">
     <div className="content">
       <h1>
-        Welcome
+        The future
         <br />
         <span>
-          to the
+          of space
           <br />
         </span>
-        Space
+        exploration
       </h1>
       <Link to="/rockets" className="btn">Explore Rockets</Link>
     </div>
