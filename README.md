@@ -39,6 +39,7 @@ To get a local copy up and running follw these simple example steps:
     - $ cd into the directory and run npm install
     - $ After the node_module module is installed successfully, run npm start
     - $ The project will open on the browser
+    
 ```
 
 ### Install
