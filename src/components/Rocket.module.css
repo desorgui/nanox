@@ -1,7 +1,13 @@
 .rocket {
   display: flex;
-  flex-direction: row;
-  margin: 24px 64px;
+  flex-direction: column;
+  width: 45%;
+}
+
+.rocket img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 8px;
 }
 
 .rocketname {

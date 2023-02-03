@@ -14,12 +14,30 @@
 body {
   margin: 0;
   color: #fff;
-  background: #444;
+  background: #222;
 }
 
 .App-logo {
   height: 8vmin;
   pointer-events: none;
+}
+
+.rockets-container {
+  margin: 7rem auto;
+}
+
+.rockets-container > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4.5rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.rockets-container h1 {
+  color: #fff;
+  margin: 1rem 4.5rem;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
