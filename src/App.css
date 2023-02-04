@@ -61,10 +61,6 @@ body {
   color: #288dff;
 }
 
-.userBadge {
-  min-width: 180px;
-}
-
 .joinButton {
   min-width: 150px;
 }
@@ -75,16 +71,18 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .missions_container {
-  margin-bottom: 100px;
+  margin: 7rem 4.5rem;
 }
 
 .userBadge label {
   color: #fff;
   padding: 3px 5px;
   border-radius: 4px;
+  text-align: center;
   background-color: rgb(102, 100, 100);
 }
 
