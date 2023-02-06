@@ -24,8 +24,6 @@
 
 ## Getting Started
 
-**To get a local copy up and running follow these simple example steps**.
-
 ### Prerequisites
 
 - You need to have a code editor to be able to run the code. VSCode is most preferred.
