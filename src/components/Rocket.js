@@ -3,8 +3,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import {
   Navigation,
-  Pagination,
-  Scrollbar,
+  EffectCube,
   A11y,
 } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,14 +32,11 @@ function Rocket(props) {
   return (
     <div className={styles.rocket}>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, A11y, EffectCube]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        effect="cube"
       >
         {image.map((elem) => (
           <SwiperSlide key={elem}><img src={elem} alt={name} height="250" width="300" /></SwiperSlide>
