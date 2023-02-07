@@ -18,7 +18,7 @@ import styles from './Rocket.module.css';
 function Rocket(props) {
   const dispatch = useDispatch();
   const {
-    id, name, description, image, reserved,
+    id, name, image, reserved,
   } = props;
 
   const reservation = (elem) => {
@@ -47,7 +47,7 @@ function Rocket(props) {
         <p>
           {reserved && <mark>Reserved</mark>}
           {' '}
-          {description}
+          {/* {description} */}
         </p>
         {reserved
           ? <button id={id} type="button" className={styles.cancel} onClick={cancel}>Cancel Reservation</button>
@@ -60,7 +60,7 @@ function Rocket(props) {
 Rocket.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  // description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,
 };

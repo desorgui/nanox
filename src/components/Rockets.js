@@ -8,7 +8,6 @@ const Rockets = () => {
 
   return (
     <div className="rockets-container">
-      <h1>Rockets list</h1>
       <div>
         {rocketlist.map((elem) => <Rocket key={elem.id} {...elem} />)} {/* eslint-disable-line */}
       </div>

@@ -127,6 +127,7 @@ td {
 .splash-container img {
   height: 80vh;
   position: absolute;
+  z-index: 2;
   right: 3rem;
   bottom: 1rem;
   animation: bounce 10s linear infinite;
@@ -148,10 +149,11 @@ td {
 
 .swiper-button-prev,
 .swiper-button-next {
+  display: none;
   top: 22px;
   width: 50px;
   height: 100%;
-  background: #11111144;
+  background: #1114;
 }
 
 .swiper-button-prev {
@@ -160,4 +162,18 @@ td {
 
 .swiper-button-next {
   right: 0;
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  display: flex;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: -3rem;
+  width: 80%;
+  height: 6rem;
+  border-radius: 1rem;
+  background-color: #555;
 }
