@@ -10,21 +10,7 @@ const Rockets = () => {
     <div className="rockets-container">
       <h1>Rockets list</h1>
       <div>
-        {rocketlist.map((elem) => {
-          const {
-            id, name, description, image, reserved,
-          } = elem;
-          return (
-            <Rocket
-              key={id}
-              id={id}
-              name={name}
-              description={description}
-              image={image}
-              reserved={reserved}
-            />
-          );
-        })}
+        {rocketlist.map((elem) => <Rocket key={elem.id} {...elem} />)} {/* eslint-disable-line */}
       </div>
     </div>
   );

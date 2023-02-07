@@ -1,6 +1,16 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css/bundle';
 
 import { reserveRocket, cancelRocket } from '../redux/rockets/rockets';
 
@@ -22,7 +32,20 @@ function Rocket(props) {
 
   return (
     <div className={styles.rocket}>
-      <img src={image} alt={name} height="250" width="300" />
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+      >
+        {image.map((elem) => (
+          <SwiperSlide key={elem}><img src={elem} alt={name} height="250" width="300" /></SwiperSlide>
+        ))}
+      </Swiper>
       <div>
         <h2 className={styles.rocketname}>{name}</h2>
         <p>

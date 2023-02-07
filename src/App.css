@@ -139,3 +139,9 @@ td {
   75% { transform: translate(-25px, -25px); }
   100% { transform: translate(0, 0); }
 }
+
+.swiper,
+.swiper-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
